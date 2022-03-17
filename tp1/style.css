@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --success-color: #28a745;
+    --danger-color: #bd2130;
+    --waming-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   
+    background-color: #f5f5f5;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+main{
+    flex: 3;
+     width: 90%;
+    margin-left: 2%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+button{
+    margin: 1%;
+    height: 30%;
+    width: 20%;
+    border-radius: 6px;
+    border: 2px solid;
+    background-color: green ;
+    color: #ffffff;
+}
+.content{
+    flex: 7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: column;
+}
+.message{
+    font-size: 200%;
+    font-weight: 900px;
+}
+.succes{
+    background-color: #28a745;
+}
+.danger{
+    background-color: #bd2130;
+}
+.waming{
+    background-color: #ffc107;
+}
+.info{
+    background-color: #17a2b8;
+}
