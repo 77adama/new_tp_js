@@ -5,23 +5,48 @@
 }
 body{
     border: 4px solid;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     
 }
 nav{
-    
-    float: 3;
+    padding-left: 2%;
+    flex: 2;
+
     /* display: flex;
     align-items: center;
     flex-direction: column; */
+    
 }
 aside{
     background-color: brown;
     flex: 7;
 }
- table{
+ul{
+    list-style: none;
+    
+}
+
+ul ul{
+    margin-left: 5%;
+    background-color: brown;
+    padding: 3%;
+    width: 75%;
+}
+
+nav ul li{
+  
+}
+.search{
+    display: flex;
+}
+b{
+    background-color: cornflowerblue;
+}
+
+
+ /* table{
     display: flex;
    flex-direction: column;
 }
@@ -33,3 +58,6 @@ td{
     display: flex;
     flex-direction: column;
 }
+.fa{
+    font-size:24px;
+} */
