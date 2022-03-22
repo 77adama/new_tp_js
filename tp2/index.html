@@ -1,285 +1,120 @@
 <!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
-    <nav>
-        <div class="admin">
-            <!-- <i class="fa fa-font" style="font-size:24px"></i>  -->
-            <i class="fa fa-buysellads" aria-hidden="true"></i>
-            AdminLTE3
-            <!-- <i class="fa fa-font" style="font-size:24px"></i> -->
-            <!-- <img src="#" alt="">
-          <small>AdminLTE3</small>   -->
-        </div>
-        <div class="alexender">
-            Alexendre Pierce
-            <!-- <img src="" alt="">
-          <small>Alexendre Pierce</small>   -->
-        </div>
-        <div class="search">
-            <input type="search" value="Search">
-            <i class="fa fa-search" style="font-size:24px"></i>
-           <!-- <small>Search</small> 
-            <i class='fas fa-search'></i> -->
-        </div>
-        <ul>
-            <li>
-                <i class="fa fa-dashboard" style="font-size:26px"></i>
-                Dashboard <i class="fa fa-angle-left" style="font-size:24px"></i>
-                <ul>
-                    <li>Dashboard v1</li>
-                    <li>Dashboard v2</li>
-                    <li>Dashboard v3</li>
-                </ul>
-            </li>
-            <li>
-                <i class="fa fa-th" style="font-size:24px"></i>
-                Widgets</li>
-            <li>
-                <div class="icone"> <i class="fa fa-copy" style="font-size:24px"></i>
-                Layout Option <b>6</b>  <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </div>
-                <ul>
-                    <li>Top Navigation</li>
-                    <li>Top Navigation+Sedebar</li>
-                    <li>Boxed</li>
-                    <li>Fixed Sidebar</li>
-                    <li>Fixed Sidebar + Custom</li>
-                </ul>
-            </li>
-            <li><i class="fa fa-pie-chart" style="font-size:24px"></i>
-                Charts <i class="fa fa-angle-left" style="font-size:24px"></i>
-                <ul>
-                    <li>ChartsJs</li>
-                    <li>Flot</li>
-                    <li>Inline</li>
-                    <li>uPlot</li>
-                </ul>
-            </li>
-            <li>UI Elements <i class="fa fa-angle-left" style="font-size:24px"></i>
-                <ul>
-                    <li>General</li>
-                    <li>Icone</li>
-                    <li>Buttons</li>
-                    <li>Sliders</li>
-                    <li>Modals & Alerts</li>
-                    <li>Navbar & Tabs</li>
-                    <li>Timeline</li>
-                    <li>Ribbons</li>
-                </ul>
-            </li>
-            <li><i class='far fa-edit' style='font-size:24px'></i>
-                Forms <i class="fa fa-angle-left" style="font-size:24px"></i>
-                <ul>
-                    <li>Genéral Elements</li>
-                    <li>Advanced Elements</li>
-                    <li>Editor</li>
-                    <li>Validation</li>
-                </ul>
-            </li>
-            <li><i class="fa fa-table" style="font-size:24px"></i>
-                Tables <i class="fa fa-angle-left" style="font-size:24px"></i>
-                <ul>
-                    <li>Simple Tables</li>
-                    <li>DataTables</li>
-                    <li>jsGRID</li>
-                </ul>
-            </li>
-        </ul>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
 
+                <div class="text logo-text">
+                    <span class="name">Codinglab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
 
     </nav>
-    <aside>
-        <i class="fa fa-align-justify" style="font-size:36px;"></i>
-    </aside>
+
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
     <script src="script.js"></script>
+
 </body>
 </html>
-
-
-    <!-- <tr>
-        <th>Dashboard</th>
-        <i class="fa fa-angle-left" style="font-size:24px"></i>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="v1">
-            <label for="v1">Dashboard v1</label>
-        </div>
-
-        <div class="tabl">
-            <input type="radio" id="v2">
-            <label for="v2">Dashboard v2</label>
-            <i class="fa fa-circle-thin" style="font-size:36px"></i>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="v3">
-            <label for="v3">Dashboard v3</label>
-        </div>
-
-        </td>
-    </tr> -->
-    <!-- <tr>
-        <th>Layout Option</th>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="top_n">
-            <label for="top_n">Top Navigation</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="top_n_S">
-            <label for="top_n_S">Top Navigation+Sedebar</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="box">
-            <label for="box">Boxed</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="Fixed_si">
-            <label for="Fixed_si">Fixed Sidebar</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="Fixed_si_c">
-            <label for="Fixed_si_c">Fixed Sidebar + Custom</label>
-             </div>
-
-        </td>
-    </tr> -->
-    <!-- <tr>
-        <th>Charts</th>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="Charts_js">
-            <label for="Charts_js">ChartsJs</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="flot">
-            <label for="flot">Flot</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">Inline</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="uplot">
-            <label for="uplot">uPlot</label>
-        </div>
-
-        </td>
-    </tr> -->
-    <!-- <tr>
-        <th>UI Elements</th>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="Charts_js">
-            <label for="Charts_js">General</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="flot">
-            <label for="flot">Icone</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">Buttons</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="uplot">
-            <label for="uplot">Sliders</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">Modals & Alerts</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="uplot">
-            <label for="uplot">Navbar & Tabs</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">Timeline</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="uplot">
-            <label for="uplot">Ribbons</label>
-        </div>
-
-        </td>
-    </tr> -->
-    <!-- <tr>
-        <th>Forms</th>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="Charts_js">
-            <label for="Charts_js">Genéral Elements</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="flot">
-            <label for="flot">Advanced Elements</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">Editor</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="uplot">
-            <label for="uplot">Validation</label>
-        </div>
-                
-        </td>
-    </tr> -->
-    <!-- <tr>
-        <th>Tables</th>
-        <td>
-            <div class="tabl">
-            <input type="radio" id="Charts_js">
-            <label for="Charts_js">Simple Tables</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="flot">
-            <label for="flot">DataTables</label>
-        </div>
-
-            <div class="tabl">
-            <input type="radio" id="inline">
-            <label for="inline">jsGRID</label>
-        </div>
-        
-        </td>
-    </tr> -->

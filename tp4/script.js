@@ -14,7 +14,10 @@ const unJourEnMs = 1000*60*60*24
 const uneHeureEnMs = 1000*60*60
 const uneMinuteEnMs = 1000*60
 
-const newYear= new Date ("2023")
+const dat=new Date()
+
+const newYear= new Date ("2023") 
+console.log(dat.getHours(),dat.getMinutes(),dat.getSeconds())
 
 const getCountdown=()=>{    
     //date à l'instan t
@@ -39,7 +42,7 @@ const getCountdown=()=>{
 
     // if (tempsRestantEnMs<=0) {
     //     jEL.textContent=0
-    //     hEL.textContent=0
+    //     hEL.textContent=0    https://youtu.be/CeLu1vSuaTQ lien ytub ou https://youtu.be/r9MycU39ICw
     //     mEL.textContent=0
     //     sEL.textContent=0
     //     titleEL.innerHTML='bonne année !!!'
