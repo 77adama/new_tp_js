@@ -20,6 +20,7 @@ body{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     position: relative;
     overflow: hidden;
+    transition: all .5s ease-in-out;
 }
 #container{
     height: 400px;
@@ -46,12 +47,17 @@ body{
 #d{
     right: 0;
     opacity: 0.6;
-   
     /* transform: rotate(18deg); */
 }
 #g:hover{
     opacity: 1;
+   background-color: red;
+
 }
 #d:hover{
     opacity: 1;
+}
+.zoom{
+    transform: scale(120%);
+
 }

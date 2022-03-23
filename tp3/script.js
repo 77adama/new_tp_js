@@ -1,5 +1,6 @@
 const bodyEl=document.querySelector('body')
 const containerEL=document.getElementById('container')
+const CarousselEl=document.getElementById('Caroussel');
 const gEL=document.getElementById('g')
 const dEL=document.getElementById('d')
 
@@ -52,3 +53,10 @@ function affMas(){
     dEL.style.visibility="visible"
     
 }
+
+CarousselEl.addEventListener('mouseover',()=>{
+    CarousselEl.classList.add("zoom");
+});
+CarousselEl.addEventListener('mouseout',()=>{
+    CarousselEl.classList.remove("zoom");
+});

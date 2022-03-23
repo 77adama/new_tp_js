@@ -10,6 +10,7 @@
 }
 
 .side-bar{
+   
     position: fixed;
     top: 0;
     left: 0;
@@ -58,6 +59,7 @@ input{
    overflow: auto;
     height: 100%;
     padding: 10px 0 180px 0;
+    flex: 7;
 }
 .side-bar .nav-links::-webkit-scrollbar{
     display: none;
@@ -164,34 +166,40 @@ input{
     
     
 }
-/* input{
-    
-    display: none;
-} */
-
+.en-tete{
+    height: 30%;
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid red;
+}
+.ul-sou-menue{
+   
+}
 .divv{
     display: flex;
     align-items: center;
     height: 6%;
-  
+
 }
 .open{
     /* display: block; */
 
 }
-
 .sou_menue{
     display: flex;
     align-items: center;
     height: 6%;
+}
+
+.ul-sou-menue{
     display: none;
     
 }
 .hidden{
-    display: block;
-    display: flex;
+    display: block; 
     align-items: center;
-    height: 6%;
 }
 #sou_meneu_toggle{
     /* display: none;

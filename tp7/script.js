@@ -125,7 +125,6 @@ menueEL.addEventListener("click", (e) => {
 })
 
 
-
 tab = [
     {
         icone1: "fa fa-dashboard",
@@ -271,6 +270,7 @@ tab = [
     }
 ]
 
+
 tab.forEach(function (objet) {
     icon1Val = objet['icone1']
     spanVal = objet['span']
@@ -302,7 +302,11 @@ tab.forEach(function (objet) {
     divToggle.appendChild(icone2)
     divv.appendChild(divIcone)
     divv.appendChild(divToggle)
+    const ulSouMenue=document.createElement('ul')
+    ulSouMenue.setAttribute('class', "ul-sou-menue")
    ul.appendChild(divv)
+   ul.appendChild(ulSouMenue)
+
     sousMenu.forEach( (el)=> {
         icon1Val = el['icone1']
         bVal = el['b']
@@ -321,12 +325,15 @@ tab.forEach(function (objet) {
         icone2.setAttribute('class', icon2Val)
         const b = document.createElement('b')
         b.innerText = bVal
+        
         divIcone.appendChild(icone1)
         divToggle.appendChild(b)
-        divToggle.appendChild(icone2)
         divvv.appendChild(divIcone)
         divvv.appendChild(divToggle)
-        ul.appendChild(divvv)
+        divToggle.appendChild(icone2)
+
+        ulSouMenue.appendChild(divvv)
+        
 
         
         })
@@ -336,9 +343,7 @@ tab.forEach(function (objet) {
         const divHidden=document.querySelectorAll('.sou_menue')
         divv.addEventListener('click', ()=>{
             icone2.classList.toggle('rotation')
-            divHidden.forEach(element => {
-                element.classList.toggle('hidden');
-            });
+            divv.nextElementSibling.classList.toggle('hidden')
     });
 
 
