@@ -71,12 +71,12 @@ main{
 .movie-info span.green{
     color: lightgreen;
 }
-.movie-info span.orange{
+/* .movie-info span.orange{
     color: orange;
 }
 .movie-info span.red{
     color: red;
-}
+} */
 .overview{
     position: absolute;
     left: 0;
@@ -89,5 +89,8 @@ main{
     /* transition: transform 0.3s ease-in; */
 }
 .movie:hover .overview{
-    transform: translateY(0);
+    transform: translateY(10%);
+}
+p{
+    
 }

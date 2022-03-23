@@ -35,13 +35,16 @@ span.setAttribute('class', 'green')
 span.innerText = note
 const divOverview =document.createElement('div')
 divOverview.setAttribute('class', 'overview')
-divOverview.innerText = description
 const H3 =document.createElement('h3')
 H3.innerText = 'overview'
+const p =document.createElement('p')
+p.innerText = description
+
 
 divMovieInfo.appendChild(h3)
 divMovieInfo.appendChild(span)
 divOverview.appendChild(H3)
+divOverview.appendChild(p)
 divMovie.appendChild(image)
 divMovie.appendChild(divMovieInfo)
 divMovie.appendChild(divOverview)
