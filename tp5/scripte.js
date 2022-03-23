@@ -4,6 +4,8 @@ const IMGPATH = "https://image.tmdb.org/t/p/w1280"
 const SEARCHAPI ='https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query='
  
 
+const form =  document.getElementById('form');
+const search = document.getElementById('search');
 
 // const img=document.getElementById('img')
 
@@ -19,7 +21,7 @@ const SEARCHAPI ='https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5e
 
 
  const main=document.getElementById('main')
-function Affiche(images,Text,note,description ) {
+function Affiche(images,titre,note,description ) {
     
 const divMovie =document.createElement('div')
 divMovie.setAttribute('class', 'movie')
@@ -29,7 +31,7 @@ image.setAttribute('id', 'img')
 const divMovieInfo =document.createElement('div')
 divMovieInfo.setAttribute('class', 'movie-info')
 const h3 =document.createElement('h3')
-h3.innerText = Text
+h3.innerText = titre
 const span =document.createElement('span')
 span.setAttribute('class', 'green')
 span.innerText = note
@@ -59,8 +61,8 @@ fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     return json
     
 })
-.then(function (adama) {
-    result=adama.results
+.then(function (json) {
+    result=json.results
     console.log(result);
    return result
 })
@@ -76,5 +78,40 @@ fetch("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     
 })
 
+search.addEventListener('input', () => {
+   main.innerHTML=''
+   const searchFilm = search.value;
+ 
+   fetch(SEARCHAPI+searchFilm)
+.then(function (donne) {
+    json=donne.json()
+    return json
+    
+})
+.then(function (json) {
+    result=json.results
+    console.log(result);
+   return result
+})
+.then(function (data) {
+   data.forEach(element => {
+      photo=IMGPATH+element.backdrop_path
+      note=element.vote_average
+      description=element.overview
+    titre=   element.title
+    Affiche(photo,titre,note,description )
+       
+   });
+    
+})
+
+ 
+   console.log(searchFilm)
+   
+   // // if(searchFilm===titre) {
+   // //    Affiche(photo,titre,note,description )
+   // }
+
+})
 
 
