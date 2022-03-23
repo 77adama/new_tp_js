@@ -1,138 +1,120 @@
 <!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<title>Hello, Boxicons!</title>
-<link rel="stylesheet" href="style.css">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
-    <div class="side-bar close" id="sidbar">
-        <div class="en-tete">
-        <div class="divv ">
-            <div class="divicone">
-            <i class='bx bx-font'></i>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Codinglab</span>
+                    <span class="profession">Web developer</span>
+                </div>
             </div>
-            <div class="divtoggle">
-            <span class="logo_name">AdminLT3</span>
-        </div>
-        </div>
-        <div class="divv">
-            <div class="divicone">
-                <i class="fa fa-user"></i>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
-           <div class="divtoggle">
-            <span class="logo_name">Alexendre Pierce</span>
-         </div>
-        </div>
-        <div class="divv">
-            <div class="divtoggle">
-                <input type="search" value="Search" class="logo_name">
-                <i class='bx bx-search-alt-2'></i>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
             </div>
-           
         </div>
-    </div>
-        <ul class="nav-links">
-          <!--   <li>
-                <a href="#" class="das-btn">
-                    <i class="fa fa-dashboard"></i>
-            <span class="logo_name">Dashboard</span>
-            <i class="fa fa-angle-left " ></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>Dashboard v1</li>
-                    <li><i class='bx bx-circle'></i>Dashboard v2</li>
-                    <li><i class='bx bx-circle'></i>Dashboard v3</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class="fa fa-th" ></i>
-            <span class="logo_name"> Widgets</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class="fa fa-copy" ></i>
-            <span class="logo_name">Layout Option</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>Top Navigation</li>
-                    <li><i class='bx bx-circle'></i>Top Navigation+Sedebar</li>
-                    <li><i class='bx bx-circle'></i>Boxed</li>
-                    <li><i class='bx bx-circle'></i>Fixed Sidebar</li>
-                    <li><i class='bx bx-circle'></i>Fixed Sidebar + Custom</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class="fa fa-pie-chart" ></i>
-            <span class="logo_name">Charts</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>ChartsJs</li>
-                    <li><i class='bx bx-circle'></i>Flot</li>
-                    <li><i class='bx bx-circle'></i>Inline</li>
-                    <li><i class='bx bx-circle'></i>uPlot</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class='bx bxs-traffic'></i>
-            <span class="logo_name">UI Elements</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>General</li>
-                    <li><i class='bx bx-circle'></i>Icone</li>
-                    <li><i class='bx bx-circle'></i>Buttons</li>
-                    <li><i class='bx bx-circle'></i>Sliders</li>
-                    <li><i class='bx bx-circle'></i>Modals & Alerts</li>
-                    <li><i class='bx bx-circle'></i>Navbar & Tabs</li>
-                    <li><i class='bx bx-circle'></i>Timeline</li>
-                    <li><i class='bx bx-circle'></i>Ribbons</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class='bx bx-edit'></i>
-            <span class="logo_name">Forms</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>Genéral Elements</li>
-                    <li><i class='bx bx-circle'></i>Advanced Elements</li>
-                    <li><i class='bx bx-circle'></i>Editor</li>
-                    <li><i class='bx bx-circle'></i>Validation</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="das-btn">
-                    <i class='fa fa-table'></i>
-            <span class="logo_name">Tables</span>
-            <i class="fa fa-angle-left" style="font-size:24px"></i>
-                </a>
-                <ul class="show">
-                    <li><i class='bx bx-circle'></i>Simple Tables</li>
-                    <li><i class='bx bx-circle'></i>DataTables</li>
-                    <li><i class='bx bx-circle'></i>jsGRID</li>
-                </ul>
-            </li> -->
-        </ul> 
-    </div>
-    <section class="menue-section">
-        <div class="meneu-content">
-        <i class="fa fa-align-justify"></i>
-        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
     </section>
+
     <script src="script.js"></script>
+
 </body>
 </html>

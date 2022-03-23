@@ -1,402 +1,383 @@
-const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
 
+// const divEl=document.querySelector('.side-bar')
+//  const ulEl=document.createElement('ul')
+// ulEl.setAttribute('class', 'nav-links')
 
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
-
-
-   
- 
-
-
-
-    
-    // const adminn=document.querySelector('.admin')
-    // const alexendeR=document.querySelector('.alexender')
-    // const searcH=document.querySelector('.search')
-    // const naV=document.querySelector('nav')
-    
-    // const small=document.createElement('small')
-    // small.innerHTML=p
-    // const i1=document.createElement('i')
-    // const i2=document.createElement('i')
-    // i1.setAttribute('class',icon1)
-    // i2.setAttribute('class',icon2)
-    // naV.appendChild(i1)
-    // naV.appendChild(small)
-    // naV.appendChild(i2)
-
-
-    
-
-
- 
-
-
+// const liEl=document.createElement('li')
+// const a=document.createElement('a')
+// a.setAttribute('class', 'das-btn')
+// const i1=document.createElement('i')
+// i1.setAttribute('class', 'fa fa-dashboard')
+// const span=document.createElement('span')
+// span.setAttribute('class', 'logo_name')
+// span.innerHTML='Dashboard'
+// const i2=document.createElement('i')
+// i2.setAttribute('class', 'fa fa-angle-left')
 
 // const ul=document.createElement('ul')
-// const li=document.createElement('li')
+// ul.setAttribute('class', 'show')
+// const liA=document.createElement('li')
+// const i3A=document.createElement('i')
+// i3A.setAttribute('class', 'bx bx-circle')
+// const liB=document.createElement('li')
+// const i3B=document.createElement('i')
+// i3B.setAttribute('class', 'bx bx-circle')
+// const liC=document.createElement('li')
+// const i3C=document.createElement('i')
+// i3C.setAttribute('class', 'bx bx-circle')
+
+// liA.appendChild(i3A)
+// liA.innerHTML='Dashboard v1'
+// ul.appendChild(liA)
+// liB.appendChild(i3B)
+// liB.innerHTML='Dashboard v2'
+// ul.appendChild(liB)
+// liC.appendChild(i3C)
+// liC.innerHTML='Dashboard v3'
+// ul.appendChild(liC)
+
+// a.appendChild(i1)
+// a.appendChild(span)
+// a.appendChild(i2)
+
+
+// liEl.appendChild(a)
+// liEl.appendChild(ul)
+// ulEl.appendChild(liEl)
+// divEl.appendChild(ulEl)
+// /////////////////////////////////////////////////////
+
+// const liEl1=document.createElement('li')
+// const a1=document.createElement('a')
+// a1.setAttribute('class', 'das-btn')
+// const i11=document.createElement('i')
+// i11.setAttribute('class', 'fa fa-copy')
+// const span1=document.createElement('span')
+// span1.setAttribute('class', 'logo_name')
+// span1.innerHTML='Layout Option'
+// const i21=document.createElement('i')
+// i21.setAttribute('class', 'fa fa-angle-left')
+
 // const ul1=document.createElement('ul')
+// ul1.setAttribute('class', 'show')
+// const liA1=document.createElement('li')
+// const i3A1=document.createElement('i')
+// i3A1.setAttribute('class', 'bx bx-circle')
+// const liB1=document.createElement('li')
+// const i3B1=document.createElement('i')
+// i3B1.setAttribute('class', 'bx bx-circle')
+// const liC1=document.createElement('li')
+// const i3C1=document.createElement('i')
+// i3C1.setAttribute('class', 'bx bx-circle')
+// const liD1=document.createElement('li')
+// const i3D1=document.createElement('i')
+// i3D1.setAttribute('class', 'bx bx-circle')
+
+// liA1.appendChild(i3A1)
+// liA1.innerHTML='Top Navigation'
+// ul1.appendChild(liA1)
+// liB1.appendChild(i3B1)
+// liB1.innerHTML='Top Navigation+Sedebar'
+// ul1.appendChild(liB1)
+// liC1.appendChild(i3C1)
+// liC1.innerHTML='Boxed'
+// ul1.appendChild(liC1)
+// liD1.appendChild(i3D1)
+// liD1.innerHTML='ixed Sidebar'
+// ul1.appendChild(liD1)
+
+// a1.appendChild(i11)
+// a1.appendChild(span1)
+// a1.appendChild(i21)
+
+// liEl1.appendChild(a1)
+// liEl1.appendChild(ul1)
+// ulEl.appendChild(liEl1)
+// divEl.appendChild(ulEl)
+// console.log(ulEl)
 
 
-///////////////////jhkfheyzkzz////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+// let lienA = document.querySelectorAll('.das-btn')
+// for (var i = 0; i < lienA.length; i++) {
+//     lienA[i].addEventListener("click", (e) => {
+//         let lienAParent = e.target.parentElement.parentElement
+//         lienAParent.classList.toggle("show")
 
-// const adminn=document.querySelector('.admin')
-// const alexendeR=document.querySelector('.alexender')
-// const searcH=document.querySelector('.search')
-// const naV=document.querySelector('nav')
+//     });
+
+// }
+let sidebarEL = document.querySelector('.side-bar')
+let menueEL = document.querySelector('.fa-align-justify')
+const inpuEl = document.querySelector('input')
+const sidbarEl = document.getElementById('sidbar')
+const gggEl = document.getElementById('ggg')
 
 
-// /////////////////////////
-// const i1=document.createElement('i')
-// i1.setAttribute('class','fas fa-search')
-// const small1=document.createElement('small')
-// small1.innerHTML='AdminLTE3'
-// adminn.appendChild(image1)
-// adminn.appendChild(small1)
+// menueEL.addEventListener("click", ()=>{
+//     sidebarEL.classList.toggle("close")
 
-// const image2=document.createElement('img')
-// const small2=document.createElement('small')
-// small2.innerHTML='Alexendre Pierce'
-// alexendeR.appendChild(image2)
-// alexendeR.appendChild(small2)
+// })
 
-// const ii=document.createElement('i')
-// const small3=document.createElement('small')
-// ii.setAttribute('class','fas fa-search')
-// small3.innerHTML='Alexendre Pierce'
-// searcH.appendChild(ii)
-// searcH.appendChild(small3)
 
-// const tablE=document.createElement('table')
+tab = [
+    {
+        icone1: "fa fa-dashboard",
+        span: "Dashboard",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+            {
+                icone1: "bx bx-circle",
+                b: "Dashboard v1",
+                icone2: "",
+            },
+            {
+                icone1: "bx bx-circle",
+                b: "Dashboard v2",
+                icone2: "",
+            },
+            {
+                icone1: "bx bx-circle",
+                b: "Dashboard v3",
+                icone2: "",
+            }
+        ]
+    },
+    {
+        icone1: "fa fa-th",
+        span: "Widgets",
+        icone3: "",
+        icone2: "",
+        sousMenu:[]
+     },
 
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const tR1=document.createElement('tr')
-// const tH1=document.createElement('th')
-// tH1.innerHTML='Dashboard'
-// tR1.appendChild(tH1)
-// tablE.appendChild(tR1)
-// naV.appendChild(tablE)
-// const tD1=document.createElement('td')
-// const div1=document.createElement('div')
-// div1.setAttribute('class', 'tabl')
+    {
+        icone1: "fa fa-copy",
+        span: "Layout Option",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Top Navigation",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Top Navigation+Sedebar",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Boxed",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Fixed Sidebar",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Fixed Sidebar + Custom",
+                        icone2: "",
+                    }
+                ]
+    },
 
-// const input1=document.createElement('input')
-// input1.setAttribute('type', 'radio')
-// const label1=document.createElement('label')
-// label1.innerHTML='Dashboard v1'
-// div1.appendChild(input1)
-// div1.appendChild(label1)
-// tD1.appendChild(div1)
-// tR1.appendChild(tD1)
+    {
+        icone1: "fa fa-pie-chart",
+        span: "Charts",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "ChartsJs",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Flot",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Inline",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "uPlot",
+                        icone2: "",
+                    }
+                ]
+    },
 
-// const div2=document.createElement('div')
-// const input2=document.createElement('input')
-// input2.setAttribute('type', 'radio')
-// const label2=document.createElement('label')
-// label2.innerHTML='Dashboard v2'
-// div2.appendChild(input2)
-// div2.appendChild(label2)
-// tD1.appendChild(div2)
+    {
+        icone1: "bx bxs-traffic",
+        span: "UI Elements",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "General",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Icone",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Buttons",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Sliders",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Modals",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Navbar & Tabs",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Timeline",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Ribbons",
+                        icone2: "",
+                    }
+                ]
+    }
+]
 
-// const div3=document.createElement('div')
-// const input3=document.createElement('input')
-// input3.setAttribute('type', 'radio')
-// const label3=document.createElement('label')
-// label3.innerHTML='Dashboard v3'
-// div3.appendChild(input3)
-// div3.appendChild(label3)
-// tD1.appendChild(div3)
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// const tR2=document.createElement('tr')
-// const tH2=document.createElement('th')
-// tH2.innerHTML='Layout Option'
-// tR2.appendChild(tH2)
-// tablE.appendChild(tR2)
-// naV.appendChild(tablE)
-// const tD2=document.createElement('td')
-// const div21=document.createElement('div')
-// div21.setAttribute('class', 'tabl')
+tab.forEach(function (objet) {
+    icon1Val = objet['icone1']
+    spanVal = objet['span']
+    icon3Val = objet['icone3']
+    icon2Val = objet['icone2']
+    sousMenu=objet['sousMenu']
 
-// const input21=document.createElement('input')
-// input21.setAttribute('type', 'radio')
-// const label21=document.createElement('label')
-// label21.innerHTML='Top Navigation'
-// div21.appendChild(input21)
-// div21.appendChild(label21)
-// tD2.appendChild(div21)
-// tR2.appendChild(tD2)
+    const sidebarEll = document.querySelector('.side-bar')
+    const ul=document.querySelector('.nav-links')
 
-// const div22=document.createElement('div')
-// const input22=document.createElement('input')
-// input22.setAttribute('type', 'radio')
-// const label22=document.createElement('label')
-// label22.innerHTML='Top Navigation+Sedebar'
-// div22.appendChild(input22)
-// div22.appendChild(label22)
-// tD2.appendChild(div22)
 
-// const div23=document.createElement('div')
-// const input23=document.createElement('input')
-// input23.setAttribute('type', 'radio')
-// const label23=document.createElement('label')
-// label23.innerHTML='Boxed'
-// div23.appendChild(input23)
-// div23.appendChild(label23)
-// tD2.appendChild(div23)
+    const divIcone = document.createElement('div')
+    divIcone.setAttribute('class', 'divicone')
+    const divToggle = document.createElement('div')
+    divToggle.setAttribute('class', 'divtoggle')
+    const divv = document.createElement('div')
+    divv.setAttribute('class', 'divv')
+    const icone1 = document.createElement('i')
+    icone1.setAttribute('class', icon1Val)
+    const icone2 = document.createElement('i')
+    icone2.setAttribute('class', icon2Val)
+    const icone3 = document.createElement('i')
+    icone3.setAttribute('class', icon3Val)
+    const span = document.createElement('span')
+    span.innerText = spanVal
+    divIcone.appendChild(icone1)
+    divToggle.appendChild(span)
+    divToggle.appendChild(icone3)
+    divToggle.appendChild(icone2)
+    divv.appendChild(divIcone)
+    divv.appendChild(divToggle)
+    const ulSouMenue=document.createElement('ul')
+    ulSouMenue.setAttribute('class', "ul-sou-menue")
+   ul.appendChild(divv)
+   ul.appendChild(ulSouMenue)
 
-// const div24=document.createElement('div')
-// const input24=document.createElement('input')
-// input24.setAttribute('type', 'radio')
-// const label24=document.createElement('label')
-// label24.innerHTML='Fixed Sidebar'
-// div24.appendChild(input24)
-// div24.appendChild(label24)
-// tD2.appendChild(div24)
+    sousMenu.forEach( (el)=> {
+        icon1Val = el['icone1']
+        bVal = el['b']
+        icon2Val = el['icone2']
 
-// const div25=document.createElement('div')
-// const input25=document.createElement('input')
-// input25.setAttribute('type', 'radio')
-// const label25=document.createElement('label')
-// label25.innerHTML='Fixed Sidebar'
-// div25.appendChild(input25)
-// div25.appendChild(label25)
-// tD2.appendChild(div25)
+        const divIcone = document.createElement('div')
+        divIcone.setAttribute('class', 'divicone')
+        const divToggle = document.createElement('div')
+        divToggle.setAttribute('class', 'divtoggle')
+        const divvv = document.createElement('div')
+        divvv.setAttribute('class', 'sou_menue open')
+        // divv.setAttribute('id', 'sou_meneu_toggle')
+        const icone1 = document.createElement('i')
+        icone1.setAttribute('class', icon1Val)
+        const icone2 = document.createElement('i')
+        icone2.setAttribute('class', icon2Val)
+        const b = document.createElement('b')
+        b.innerText = bVal
+        
+        divIcone.appendChild(icone1)
+        divToggle.appendChild(b)
+        divvv.appendChild(divIcone)
+        divvv.appendChild(divToggle)
+        divToggle.appendChild(icone2)
 
-// //////////////////////////////////////////////////////////////////////////////////////////////
-// const tR3=document.createElement('tr')
-// const tH3=document.createElement('th')
-// tH3.innerHTML='Charts'
-// tR3.appendChild(tH3)
-// tablE.appendChild(tR3)
-// naV.appendChild(tablE)
-// const tD3=document.createElement('td')
-// const div31=document.createElement('div')
-// div31.setAttribute('class', 'tabl')
+        ulSouMenue.appendChild(divvv)
+        
 
-// const input31=document.createElement('input')
-// input31.setAttribute('type', 'radio')
-// const label31=document.createElement('label')
-// label31.innerHTML='ChartsJs'
-// div31.appendChild(input31)
-// div31.appendChild(label31)
-// tD3.appendChild(div31)
-// tR3.appendChild(tD3)
+        
+        })
+          
 
-// const div32=document.createElement('div')
-// const input32=document.createElement('input')
-// input32.setAttribute('type', 'radio')
-// const label32=document.createElement('label')
-// label32.innerHTML='Flot'
-// div32.appendChild(input32)
-// div32.appendChild(label32)
-// tD3.appendChild(div32)
 
-// const div33=document.createElement('div')
-// const input33=document.createElement('input')
-// input33.setAttribute('type', 'radio')
-// const label33=document.createElement('label')
-// label33.innerHTML='Inline'
-// div33.appendChild(input33)
-// div33.appendChild(label33)
-// tD3.appendChild(div33)
+        const divHidden=document.querySelectorAll('.sou_menue')
+        divv.addEventListener('click', ()=>{
+            icone2.classList.toggle('rotation')
+            divv.nextElementSibling.classList.toggle('hidden')
+    });
 
-// const div34=document.createElement('div')
-// const input34=document.createElement('input')
-// input34.setAttribute('type', 'radio')
-// const label34=document.createElement('label')
-// label34.innerHTML='uPlot'
-// div34.appendChild(input34)
-// div34.appendChild(label34)
-// tD3.appendChild(div34)
 
-// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const tR4=document.createElement('tr')
-// const tH4=document.createElement('th')
-// tH4.innerHTML='UI Elements'
-// tR4.appendChild(tH4)
-// tablE.appendChild(tR4)
-// naV.appendChild(tablE)
-// const tD4=document.createElement('td')
-// const div41=document.createElement('div')
-// div41.setAttribute('class', 'tabl')
+});
 
-// const input41=document.createElement('input')
-// input41.setAttribute('type', 'radio')
-// const label41=document.createElement('label')
-// label41.innerHTML='General'
-// div41.appendChild(input41)
-// div41.appendChild(label41)
-// tD4.appendChild(div41)
-// tR4.appendChild(tD4)
+// let lienA = document.querySelectorAll('.das-btn')
+// for (var i = 0; i < lienA.length; i++) {
+//     lienA[i].addEventListener("click", (e) => {
+//         let lienAParent = e.target.parentElement.parentElement
+//         lienAParent.classList.toggle("show")
 
-// const div42=document.createElement('div')
-// const input42=document.createElement('input')
-// input42.setAttribute('type', 'radio')
-// const label42=document.createElement('label')
-// label42.innerHTML='Icone'
-// div42.appendChild(input42)
-// div42.appendChild(label42)
-// tD4.appendChild(div42)
+//     });
 
-// const div43=document.createElement('div')
-// const input43=document.createElement('input')
-// input43.setAttribute('type', 'radio')
-// const label43=document.createElement('label')
-// label43.innerHTML='Buttons'
-// div43.appendChild(input43)
-// div43.appendChild(label43)
-// tD4.appendChild(div43)
+// }
 
-// const div44=document.createElement('div')
-// const input44=document.createElement('input')
-// input44.setAttribute('type', 'radio')
-// const label44=document.createElement('label')
-// label44.innerHTML='Sliders'
-// div44.appendChild(input44)
-// div44.appendChild(label44)
-// tD4.appendChild(div44)
 
-// const div45=document.createElement('div')
-// const input45=document.createElement('input')
-// input45.setAttribute('type', 'radio')
-// const label45=document.createElement('label')
-// label45.innerHTML='Modals & Alerts'
-// div45.appendChild(input45)
-// div45.appendChild(label45)
-// tD4.appendChild(div45)
-// tR4.appendChild(tD4)
+// let divMenue = document.querySelector('.divv')
+// let souMeneuToggle = document.querySelector('#sou_meneu_toggle')
+// divMenue.addEventListener('click', ()=>{
+//     souMeneuToggle.classList.toggle("open")
+//     console.log(souMeneuToggle)
+// })
+   
+// for (var i = 0; i < divMenue.length; i++) {
+//     divMenue[i].addEventListener("click", (e) => {
+//         let lienAParent = e.target.parentElement.parentElement
+//         lienAParent.classList.toggle("sou_meneu_toggle")
 
-// const div46=document.createElement('div')
-// const input46=document.createElement('input')
-// input46.setAttribute('type', 'radio')
-// const label46=document.createElement('label')
-// label46.innerHTML='Navbar & Tabs'
-// div46.appendChild(input46)
-// div46.appendChild(label46)
-// tD4.appendChild(div46)
 
-// const div47=document.createElement('div')
-// const input47=document.createElement('input')
-// input47.setAttribute('type', 'radio')
-// const label47=document.createElement('label')
-// label47.innerHTML='Timeline'
-// div47.appendChild(input47)
-// div47.appendChild(label47)
-// tD4.appendChild(div47)
+//     });
 
-// const div48=document.createElement('div')
-// const input48=document.createElement('input')
-// input48.setAttribute('type', 'radio')
-// const label48=document.createElement('label')
-// label48.innerHTML='Ribbons'
-// div48.appendChild(input48)
-// div48.appendChild(label48)
-// tD4.appendChild(div48)
+// }
 
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const tR5=document.createElement('tr')
-// const tH5=document.createElement('th')
-// tH5.innerHTML='Forms'
-// tR5.appendChild(tH5)
-// tablE.appendChild(tR5)
-// naV.appendChild(tablE)
-// const tD5=document.createElement('td')
-// const div51=document.createElement('div')
-// div51.setAttribute('class', 'tabl')
 
-// const input51=document.createElement('input')
-// input51.setAttribute('type', 'radio')
-// const label51=document.createElement('label')
-// label51.innerHTML='Genéral Elements'
-// div51.appendChild(input51)
-// div51.appendChild(label51)
-// tD5.appendChild(div51)
-// tR5.appendChild(tD5)
+menueEL.addEventListener("click", (e) => {
 
-// const div52=document.createElement('div')
-// const input52=document.createElement('input')
-// input52.setAttribute('type', 'radio')
-// const label52=document.createElement('label')
-// label52.innerHTML='Advanced Elements'
-// div52.appendChild(input52)
-// div52.appendChild(label52)
-// tD5.appendChild(div52)
+    sidebarEL.classList.toggle("close")
 
-// const div53=document.createElement('div')
-// const input53=document.createElement('input')
-// input53.setAttribute('type', 'radio')
-// const label53=document.createElement('label')
-// label53.innerHTML='Editor'
-// div53.appendChild(input53)
-// div53.appendChild(label53)
-// tD5.appendChild(div53)
+    
+    
 
-// const div54=document.createElement('div')
-// const input54=document.createElement('input')
-// input54.setAttribute('type', 'radio')
-// const label54=document.createElement('label')
-// label54.innerHTML='Validation'
-// div54.appendChild(input54)
-// div54.appendChild(label54)
-// tD5.appendChild(div54)
-
-// ////////////////////////////////////////////////////////////////////////////////////////////
-// const tR6=document.createElement('tr')
-// const tH6=document.createElement('th')
-// tH6.innerHTML='Tables'
-// tR6.appendChild(tH6)
-// tablE.appendChild(tR6)
-// naV.appendChild(tablE)
-// const tD6=document.createElement('td')
-// const div61=document.createElement('div')
-// div61.setAttribute('class', 'tabl')
-
-// const input61=document.createElement('input')
-// input61.setAttribute('type', 'radio')
-// const label61=document.createElement('label')
-// label61.innerHTML='Simple Tables'
-// div61.appendChild(input61)
-// div61.appendChild(label61)
-// tD6.appendChild(div61)
-// tR6.appendChild(tD6)
-
-// const div62=document.createElement('div')
-// const input62=document.createElement('input')
-// input62.setAttribute('type', 'radio')
-// const label62=document.createElement('label')
-// label62.innerHTML='DataTables'
-// div62.appendChild(input62)
-// div62.appendChild(label62)
-// tD6.appendChild(div62)
-
-// const div63=document.createElement('div')
-// const input63=document.createElement('input')
-// input63.setAttribute('type', 'radio')
-// const label63=document.createElement('label')
-// label63.innerHTML='jsGRID'
-// div63.appendChild(input63)
-// div63.appendChild(label63)
-// tD6.appendChild(div63)
+})
