@@ -98,15 +98,15 @@
 
 
 /////////////////////////////////////////////////////////////
-let lienA = document.querySelectorAll('.das-btn')
-for (var i = 0; i < lienA.length; i++) {
-    lienA[i].addEventListener("click", (e) => {
-        let lienAParent = e.target.parentElement.parentElement
-        lienAParent.classList.toggle("show")
+// let lienA = document.querySelectorAll('.das-btn')
+// for (var i = 0; i < lienA.length; i++) {
+//     lienA[i].addEventListener("click", (e) => {
+//         let lienAParent = e.target.parentElement.parentElement
+//         lienAParent.classList.toggle("show")
 
-    });
+//     });
 
-}
+// }
 let sidebarEL = document.querySelector('.side-bar')
 let menueEL = document.querySelector('.fa-align-justify')
 const inpuEl = document.querySelector('input')
@@ -190,6 +190,84 @@ tab = [
                         icone2: "",
                     }
                 ]
+    },
+
+    {
+        icone1: "fa fa-pie-chart",
+        span: "Charts",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "ChartsJs",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Flot",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Inline",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "uPlot",
+                        icone2: "",
+                    }
+                ]
+    },
+
+    {
+        icone1: "bx bxs-traffic",
+        span: "UI Elements",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "General",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Icone",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Buttons",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Sliders",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Modals",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Navbar & Tabs",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Timeline",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Ribbons",
+                        icone2: "",
+                    }
+                ]
     }
 ]
 
@@ -201,6 +279,7 @@ tab.forEach(function (objet) {
     sousMenu=objet['sousMenu']
 
     const sidebarEll = document.querySelector('.side-bar')
+    const ul=document.querySelector('.nav-links')
 
 
     const divIcone = document.createElement('div')
@@ -223,7 +302,7 @@ tab.forEach(function (objet) {
     divToggle.appendChild(icone2)
     divv.appendChild(divIcone)
     divv.appendChild(divToggle)
-    sidebarEll.appendChild(divv)
+   ul.appendChild(divv)
     sousMenu.forEach( (el)=> {
         icon1Val = el['icone1']
         bVal = el['b']
@@ -233,8 +312,8 @@ tab.forEach(function (objet) {
         divIcone.setAttribute('class', 'divicone')
         const divToggle = document.createElement('div')
         divToggle.setAttribute('class', 'divtoggle')
-        const divv = document.createElement('div')
-        divv.setAttribute('class', 'sou_menue open')
+        const divvv = document.createElement('div')
+        divvv.setAttribute('class', 'sou_menue open')
         // divv.setAttribute('id', 'sou_meneu_toggle')
         const icone1 = document.createElement('i')
         icone1.setAttribute('class', icon1Val)
@@ -245,14 +324,35 @@ tab.forEach(function (objet) {
         divIcone.appendChild(icone1)
         divToggle.appendChild(b)
         divToggle.appendChild(icone2)
-        divv.appendChild(divIcone)
-        divv.appendChild(divToggle)
-        sidebarEll.appendChild(divv)
+        divvv.appendChild(divIcone)
+        divvv.appendChild(divToggle)
+        ul.appendChild(divvv)
+
+        
+        })
+          
 
 
+        const divHidden=document.querySelectorAll('.sou_menue')
+        divv.addEventListener('click', ()=>{
+            icone2.classList.toggle('rotation')
+            divHidden.forEach(element => {
+                element.classList.toggle('hidden');
+            });
     });
 
+
 });
+
+// let lienA = document.querySelectorAll('.das-btn')
+// for (var i = 0; i < lienA.length; i++) {
+//     lienA[i].addEventListener("click", (e) => {
+//         let lienAParent = e.target.parentElement.parentElement
+//         lienAParent.classList.toggle("show")
+
+//     });
+
+// }
 
 
 // let divMenue = document.querySelector('.divv')
