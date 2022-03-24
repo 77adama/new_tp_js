@@ -15,7 +15,7 @@ const search = document.getElementById('search');
 
 
  
-/*  .then(data =>image.src=data[0].url) */
+
 
 
 
@@ -107,10 +107,6 @@ search.addEventListener('input', () => {
 
  
    console.log(searchFilm)
-   
-   // // if(searchFilm===titre) {
-   // //    Affiche(photo,titre,note,description )
-   // }
 
 })
 

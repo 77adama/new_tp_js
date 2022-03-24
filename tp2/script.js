@@ -373,7 +373,7 @@ tab.forEach(function (objet) {
 // }
 
 
-menueEL.addEventListener("click", (e) => {
+menueEL.addEventListener("click", () => {
 
     sidebarEL.classList.toggle("close")
 
