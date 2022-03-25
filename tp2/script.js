@@ -214,7 +214,6 @@ tab = [
                     }
                 ]
     },
-
     {
         icone1: "bx bxs-traffic",
         span: "UI Elements",
@@ -262,6 +261,57 @@ tab = [
                         icone2: "",
                     }
                 ]
+    },
+    {
+        icone1: "bx bx-edit",
+        span: "Forms",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Genéral Elements",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Advanced Elements",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Editor",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Validation",
+                        icone2: "",
+                    }
+                 ]
+    },
+    {
+        icone1: "fa fa-table",
+        span: "Tables",
+        icone3: "",
+        icone2: "fa fa-angle-left",
+        sousMenu:[
+                    {
+                        icone1: "bx bx-circle",
+                        b: "Simple Tables",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "DataTables",
+                        icone2: "",
+                    },
+                    {
+                        icone1: "bx bx-circle",
+                        b: "jsGRID",
+                        icone2: "",
+                    }
+                 ]
     }
 ]
 
