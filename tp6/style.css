@@ -20,7 +20,7 @@ body{
    
 }
 .container{
-    border: 2px solid ;
+    
     height: 80%;
     width: 70%;
     display: flex;
@@ -74,11 +74,62 @@ body{
 }
 .meal-result{
     flex: 9;
-    background-color: green;
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 img{
-    height: 100px;
+    height: 400px;
+    width: 650px;
+    bottom: 5%;
+}
+h2{
+    background-color: #fff;
+    width:50%;
+    height: 30%;
+    position: relative;
+    top: 12%;
+    right: 25.5%;
+    flex: 1;
+    text-align: center;
+}
+#meal{
+   flex: 9;
+   
+   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meal-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex: 8;
+}
+.meal-name{
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+h3{
+    font-size: 40px;
+}
+a{
+    position: relative;
+    left: 50%;
+   text-align: center;
+}
+.fa-heart-o{
+    color: var(--tenne-tawny-dark);
+    position: relative;
+    border: none;
+    font-size:36px;
+    margin-top: 2%;
 }
 /* .btn{
     font-family: inherit;
